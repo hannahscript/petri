@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Petri</title>
+</head>
+<body>
+    <button onclick="update()">Step</button>
+
+    <label for="draw-mode">Draw mode</label>
+    <select id="draw-mode">
+        <option value="cells">Cells</option>
+        <option value="temp">Temperature</option>
+        <option value="ideal-temp">Ideal cell temperature</option>
+    </select>
+
+
+    <label id="total-cells">Total cells: 1</label>
+    <br>
+
+    <canvas id="petri-canvas" width="1000" height="1000"></canvas>
+
+    <script src="index.js"></script>
+</body>
+</html>
